@@ -1,0 +1,104 @@
+1 编一个程序，定义一个有10个元素的数组，使用for循环语句，从键盘上输入10名同学的数学成绩，分别求出最高分和最低分，并且求出10名同学的数学平均成绩。(k10042501)
+package jkljw;
+import java.util.Scanner;
+public class ljw01 {
+
+	public static void main(String[] args) {
+	  	// TODO Auto-generated method stub
+      int []scores=new int[10];
+      int sum=0;
+      int max ;
+      int min;
+      double avg=0;
+      Scanner input =new Scanner(System.in);
+      for (int i=0;i<=9;i++)
+      {
+    	 System.out.println("清输入第"+(i+1)+"科成绩") ;
+    	 scores[i]=input.nextInt();
+    	  sum+=scores[i]; 
+      }
+	   max=scores[0];
+	   for (int i=1;i<=9;i++)
+	   {
+	      if (max<scores[i])
+	    	  max=scores[i];
+	    }
+	
+	   
+	   min=scores[0];
+	   for (int i=1;i<=9;i++)
+	   {
+	      if (min>scores[i])
+	    	  min=scores[i];
+	    }
+	avg=sum/scores.length;
+	System.out.println("max="+max);
+	System.out.println("min="+min); 
+	System.out.println("avg="+avg);
+	   
+	}
+
+}
+
+2 编一个程序，用for循环语句，从键盘输入10个实数，分别求出它们中的正数之和，以及负数之和。(k10042702)
+
+package jkljw;
+import java.util.Scanner;
+public class ljw02 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+		      int []scores=new int[10];
+		      int sum1=0;
+		      int sum2=0;
+		      Scanner input =new Scanner(System.in);
+		      for (int i=0;i<=9;i++)
+		      {
+		    	 System.out.println("清输入第"+(i+1)+"数") ;
+		    	 scores[i]=input.nextInt();
+		    	  if(scores[i]>0)
+		    	 
+		    	     sum1+=scores[i]; 
+		    	  else
+		    	    sum2+=scores[i]; 
+		       }
+			   
+			System.out.println("sum1="+sum1);
+			System.out.println("sum2="+sum2); 
+				   
+			}	
+	}
+
+3 编一个程序，定义数组，用for循环语句，顺序输入10个实数，然后逆序输出这10个数。
+package jkljw;
+import java.util.Scanner;
+public class ljw03 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		 int []scores=new int[10];
+	      
+	      Scanner input =new Scanner(System.in);
+	      for (int i=0;i<=9;i++)
+	      {
+	    	 System.out.println("清输入第"+(i+1)+"数") ;
+	    	 scores[i]=input.nextInt();
+	    	  
+	       }
+		   
+	      for (int i=9;i>=0;i--)
+	      {
+	    	 System.out.print(scores[i]+" ") ;
+	    	 
+	    	  
+	       }
+	
+			   
+	}
+
+}
+
+                                                                                        
+4 编一个程序，定义一个数组，用for语句输入10个实数存入这个数组，然后按逆序重新存放后再输出。(k10050219)

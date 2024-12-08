@@ -1,0 +1,155 @@
+2.1
+   创建一个box类，长，宽，高 分别为 3  4  5。 用带参数的成员方法，里面包括两个成员函数，一个volume(double width, double height, double depth )计算长方体的体积。一个 sumvalue(double width, double height, double depth)计算长方体的面积，并在主程序调用并打印出体积和面积。
+　　/*  用带参数的成员方法计算长方体体积   */ 
+  
+ import javax.swing.*;
+  class Box
+   { 
+     double volume(double width, double height, double depth)       
+       { 
+        return width * height * depth; 
+       } 
+      double sumvalue(double width, double height, double depth)       
+       { 
+        return 2*（width * height+  width* depth+height*depth); 
+       } 
+    } 
+   public class Example3_8
+     { 
+       public static void main(String args[])
+	  { 
+           double v,s;
+           Box box = new Box(); 
+           v = box.volume(3, 4, 5); 
+           s=  box.sumvalue(3, 4, 5);
+	  system.out.println( "长方体体积＝" + v);
+	  system.out.println( "长方体面积＝" + s);
+          System.exit(0);
+       } 
+    } 
+
+
+2.2、创建一个box类，长，宽，高 分别为 5  6  4。 用带参数的成员方法，里面包括两个成员函数，一个volume(double width, double height, double depth )计算 长方体的体积。一个 sumvalue(double width, double height, double depth)计算长方体的面积，并在主程序调用并打印出体积和面积。Kaoshitixi5,同时把结果截图保存kaoshitixi5.jpg
+public class Box {
+
+    public double volume(double width, double height, double depth) {
+        return width * height * depth;
+    }
+
+
+    public double sumValue(double width, double height, double depth) {
+
+        return 2 * (width * height + width * depth + height * depth);
+    }
+
+    public static void main(String[] args) {
+    
+        Box box = new Box();
+
+        double width = 5;
+        double height = 6;
+        double depth = 4;
+
+        double volume = box.volume(width, height, depth);
+        double sumArea = box.sumValue(width, height, depth);
+
+        System.out.println("长方体的体积为：" + volume);
+        System.out.println("长方体的表面积为：" + sumArea);
+    }
+}
+
+2.3、编写一个接口程序，其中定义一个计算面积的方法。然后，再设计应用程序实现这个接口，分别计算长方形面积和圆的面积。Kaoshitixi6,同时把结果截图保存kaoshitixi6.jpg
+public interface Shape {
+    double calculateArea();
+}
+public class Rectangle implements Shape {
+ private double length; 
+ private double width;  
+
+ public Rectangle(double length, double width) {
+     this.length = length;
+     this.width = width;
+ }
+
+ @Override
+ public double calculateArea() {
+     return length * width;
+ }
+}
+public class Circle implements Shape {
+ private double radius; 
+
+ public Circle(double radius) {
+     this.radius = radius;
+ }
+
+ @Override
+ public double calculateArea() {
+     return Math.PI * Math.pow(radius, 2);
+ }
+} public class AreaCalculator {
+    public static void main(String[] args) {
+        Rectangle rectangle = new Rectangle(5, 4);
+        System.out.println("长方形的面积为: " + rectangle.calculateArea());
+
+        Circle circle = new Circle(3);
+        System.out.println("圆的面积为: " + circle.calculateArea());
+    }
+}
+
+
+3、按以下要求编写程序
+(1) 创建一个Rectangle类，添加width和height两个成员变量
+(2) 在Rectangle中添加两种方法分别计算矩形的周长和面积
+(3) 编程利用Rectangle输出一个矩形的周长和面积
+解答：
+public class Rectangle {
+	float width, height;
+	
+	public Rectangle(float width, float height) {
+		this.width = width;
+		this.height = height;
+	}
+	
+	public float getLength(){
+		return (this.width + this.height) * 2;
+	}
+	
+	public float getArea(){
+		return this.width * this.height;
+	}
+	
+	public static void main(String [] args) {
+		Rectangle rect = new Rectangle(10, 20);
+		System.out.println("周长是：" + rect.getLength());
+		System.out.println("面积是：" + rect.getArea());
+	}
+}
+
+4、定义一个实现常用数学运算的类MyMath，类中提供max()、min()、sum()和average()四个静态方法，在主类中对任意输入的三个整数，调用MyMath()类中的四个静态方法，求取结果并输除。
+public class MyMath
+{
+{ public static void main(String args[])
+     {int a=Integer.parseInt(args[0]);
+    int b=Integer.parseInt(args[1]);
+    int c=Integer.parseInt(args[2]);
+    System.out.println("The max number is  " + max(a,b,c));   
+    System.out.println("The min number is  " + min(a,b,c));   
+    System.out.println("The sum is  " + sum(a,b,c));   
+    System.out.println("The average is  " + average(a,b,c));     } 
+ public static int max(int x,int y,int z)
+      { if(x<y)
+         x=y;
+       if(x<z)
+         x=z;
+       return x; }
+ public static int min(int x,int y,int z)
+      {   if(x>y)
+         x=y;
+       if(x>z)
+         x=z;
+       return x; }   
+public static int sum(int x,int y,int z)
+      {  return x+y+z; }   
+public static int average(int x,int y,int z)
+      {  return (x+y+z)/3;  }   }}
