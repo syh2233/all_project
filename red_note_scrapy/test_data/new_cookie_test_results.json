@@ -1,0 +1,32 @@
+{
+  "main_comment": {
+    "success": false,
+    "error": "当前笔记暂时无法浏览"
+  },
+  "sub_comment": {
+    "success": false,
+    "error": "HTTP 406"
+  },
+  "method_comparison": [
+    {
+      "method": "GET请求",
+      "status_code": 406,
+      "success": false,
+      "response_success": false,
+      "message": "HTTP 406"
+    },
+    {
+      "method": "POST请求",
+      "status_code": 404,
+      "success": false,
+      "response_success": false,
+      "message": "HTTP 404"
+    }
+  ],
+  "cookie_info": {
+    "has_a1": true,
+    "has_web_session": true,
+    "has_webId": true,
+    "has_xsecappid": true
+  }
+}

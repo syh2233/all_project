@@ -1,0 +1,64 @@
+
+============================================================
+浏览器子评论 x-s-common (reqid=3866)
+============================================================
+编码长度: 1020 字符
+
+解码文本:
+{"s0":5,"s1":"","x0":"1","x1":"4.3.1","x2":"Windows","x3":"xhs-pc-web","x4":"5.11.0","x5":"19c73c73befkhzxumxymjmykz9onkp4p0xjin15jn50000280121","x6":"","x7":"","x8":"I38rHdgsjopgIvesdVwgIC+oIELmBZ5e3VwXLgFTIxS3bqwErFeexd0ekncAzMFYnqthIhJed9MDKutRI3KsYorWHPtGrbi0P9WfIi/eWc6eYqtyQApPI37ekmR6QL+5Ii6sdnoeSfqYHqwl2qt5B0DoIx+PGDi/sVtkIx0sxuwr4qtiIhuaIE3e3LV0I3VTIC7e0utl2ADmsLveDSKsSPw5IEvsiVtJOqw8BuwfPpdeTFWOIx4TIiu6ZPwrPut5IvlaLbgs3qtxIxes1VwHIkumIkIyejgsY/WTge7eSqte/D7sDcpipedeYrDtIC6eDVw2IENsSqtlnlSuNjVtIvoekqt3cZ7sVo4gIESyIhE8HfquIxhnqz8gIkIfoqwkICZWG73sdlOeVPw3IvAe0fged0kJIi5s3IrF2utAIiKsidvekZNeTPt4nAOeWPwEIvYacAdeYrDtIC6eDVw2IENsSqtlnlSuNjVtIvoekqt3cZ7sVo4gIESyIhE8HfquIxhnqz8gIkIfoqwkICZWG73sdlOeVPw3IvAe0fged0kJIi5s3IrF2utAIiKsidvekZNeTPt4nAOeWPwEIvYacA
+
+JSON 解析失败: Unterminated string in JSON at position 765 (line 1 column 766)
+
+============================================================
+浏览器主评论 x-s-common (reqid=3736)
+============================================================
+编码长度: 1020 字符
+
+解码文本:
+{"s0":5,"s1":"","x0":"1","x1":"4.3.1","x2":"Windows","x3":"xhs-pc-web","x4":"5.11.0","x5":"19c73c73befkhzxumxymjmykz9onkp4p0xjin15jn50000280121","x6":"","x7":"","x8":"I38rHdgsjopgIvesdVwgIC+oIELmBZ5e3VwXLgFTIxS3bqwErFeexd0ekncAzMFYnqthIhJed9MDKutRI3KsYorWHPtGrbi0P9WfIi/eWc6eYqtyQApPI37ekmR6QL+5Ii6sdnoeSfqYHqwl2qt5B0DoIx+PGDi/sVtkIx0sxuwr4qtiIhuaIE3e3LV0I3VTIC7e0utl2ADmsLveDSKsSPw5IEvsiVtJOqw8BuwfPpdeTFWOIx4TIiu6ZPwrPut5IvlaLbgs3qtxIxes1VwHIkumIkIyejgsY/WTge7eSqte/D7sDcpipedeYrDtIC6eDVw2IENsSqtlnlSuNjVtIvoekqt3cZ7sVo4gIESyIhE8HfquIxhnqz8gIkIfoqwkICZWG73sdlOeVPw3IvAe0fged0kJIi5s3IrF2utAIiKsidvekZNeTPt4nAOeWPwEIvYacAdeYrDtIC6eDVw2IENsSqtlnlSuNjVtIvoekqt3cZ7sVo4gIESyIhE8HfquIxhnqz8gIkIfoqwkICZWG73sdlOeVPw3IvAe0fged0kJIi5s3IrF2utAIiKsidvekZNeTPt4nAOeWPwEIvYacA
+
+JSON 解析失败: Unterminated string in JSON at position 765 (line 1 column 766)
+
+============================================================
+我们生成的 x-s-common
+============================================================
+编码长度: 284 字符
+
+解码文本:
+{"s0":"win32","s1":"","x0":"1","x1":"4.2.6","x2":"PC","x3":"xhs-pc-web","x4":"4.79.0","x5":"19c73c73befkhzxumxymjmykz9onkp4p0xjin15jn50000280121","x6":"","x7":"","x8":"","x9":"3988292384","x10":1,"x11":"normal"}
+
+JSON 字段数: 14
+
+字段详情:
+  s0: win32
+  s1:
+  x0: 1
+  x1: 4.2.6
+  x2: PC
+  x3: xhs-pc-web
+  x4: 4.79.0
+  x5: 19c73c73befkhzxumxymjmykz9onkp4p0xjin15jn50000280121
+  x6:
+  x7:
+  x8:
+  x9: 3988292384
+  x10: 1
+  x11: normal
+
+格式化 JSON:
+{
+  "s0": "win32",
+  "s1": "",
+  "x0": "1",
+  "x1": "4.2.6",
+  "x2": "PC",
+  "x3": "xhs-pc-web",
+  "x4": "4.79.0",
+  "x5": "19c73c73befkhzxumxymjmykz9onkp4p0xjin15jn50000280121",
+  "x6": "",
+  "x7": "",
+  "x8": "",
+  "x9": "3988292384",
+  "x10": 1,
+  "x11": "normal"
+}

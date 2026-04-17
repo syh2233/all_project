@@ -1,0 +1,39 @@
+{
+  "cookie_1772004421": {
+    "cookie_dict": {
+      "abRequestId": "1803bf57-c5df-5971-b2a7-52607f795c15",
+      "a1": "19c73c73befkhzxumxymjmykz9onkp4p0xjin15jn50000280121",
+      "webId": "379c3b0c3d86bd6ed9d96d2609ba7866",
+      "gid": "yjSWqSW2Yj8SyjSWqSWqDCy2diTxuC76Cv6VVVI6vTujl328ITU4UI888JY8yJy80JqDqydf",
+      "xsecappid": "xhs-pc-web",
+      "web_session": "040069b3ed6ebed4fbe3e82fab3b4be6846073",
+      "id_token": "VjEAAHsS16b34FudsYHr4PgikQZNfsoN9K9dSTb8519hrkI2iaZaKCLjGaDIhKgr6CPTM9Fr8MoVqFFXf5sEAfoaBAwVi+Q5mvaYNeCNcm4hONI42XD6M0S7vLvkHVZbj2vIybbR",
+      "webBuild": "5.11.0",
+      "acw_tc": "0a0bb2e117720032932952392ee2f61d22e97120898934f388c1ffbe6d9f89",
+      "websectiga": "29098a7cf41f76ee3f8db19051aaa60c0fc7c5e305572fec762da32d457d76ae",
+      "sec_poison_id": "9a75985c-2701-45df-9d8d-31861efd7f84",
+      "loadts": "1772004333810",
+      "unread": "{%22ub%22:%2269914f53000000000b00aa39%22%2C%22ue%22:%22698b2bf4000000001b01e71c%22%2C%22uc%22:31}"
+    },
+    "cookie_string": "abRequestId=1803bf57-c5df-5971-b2a7-52607f795c15; a1=19c73c73befkhzxumxymjmykz9onkp4p0xjin15jn50000280121; webId=379c3b0c3d86bd6ed9d96d2609ba7866; gid=yjSWqSW2Yj8SyjSWqSWqDCy2diTxuC76Cv6VVVI6vTujl328ITU4UI888JY8yJy80JqDqydf; xsecappid=xhs-pc-web; web_session=040069b3ed6ebed4fbe3e82fab3b4be6846073; id_token=VjEAAHsS16b34FudsYHr4PgikQZNfsoN9K9dSTb8519hrkI2iaZaKCLjGaDIhKgr6CPTM9Fr8MoVqFFXf5sEAfoaBAwVi+Q5mvaYNeCNcm4hONI42XD6M0S7vLvkHVZbj2vIybbR; webBuild=5.11.0; acw_tc=0a0bb2e117720032932952392ee2f61d22e97120898934f388c1ffbe6d9f89; websectiga=29098a7cf41f76ee3f8db19051aaa60c0fc7c5e305572fec762da32d457d76ae; sec_poison_id=9a75985c-2701-45df-9d8d-31861efd7f84; loadts=1772004333810; unread={%22ub%22:%2269914f53000000000b00aa39%22%2C%22ue%22:%22698b2bf4000000001b01e71c%22%2C%22uc%22:31}",
+    "source": "手动输入",
+    "added_time": "2026-02-25T15:27:01.719919",
+    "last_used": "2026-02-26T07:05:13.180070",
+    "use_count": 94,
+    "expiry_info": {
+      "abRequestId": "动态生成 (每次请求)",
+      "a1": "长期有效 (数月)",
+      "webId": "长期有效 (数月)",
+      "gid": "超长有效 (数年)",
+      "xsecappid": "未知",
+      "web_session": "长期有效 (数月)",
+      "id_token": "未知",
+      "webBuild": "未知",
+      "acw_tc": "动态生成 (每次请求)",
+      "websectiga": "短期有效 (数天)",
+      "sec_poison_id": "短期有效 (数天)",
+      "loadts": "动态生成 (每次请求)",
+      "unread": "未知"
+    }
+  }
+}

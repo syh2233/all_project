@@ -1,0 +1,38 @@
+{
+  "test_summary": {
+    "total_tests": 4,
+    "success_count": 0,
+    "success_rate": "0.0%"
+  },
+  "detailed_results": [
+    {
+      "test_case": "完整参数（包含xsec_token）",
+      "success": false,
+      "http_error": 406,
+      "response_text": "{\"code\":-1,\"success\":false}"
+    },
+    {
+      "test_case": "基础参数",
+      "success": false,
+      "http_error": 406,
+      "response_text": "{\"code\":-1,\"success\":false}"
+    },
+    {
+      "test_case": "带cursor参数",
+      "success": false,
+      "http_error": 406,
+      "response_text": "{\"code\":-1,\"success\":false}"
+    },
+    {
+      "test_case": "带image_formats参数",
+      "success": false,
+      "http_error": 406,
+      "response_text": "{\"code\":-1,\"success\":false}"
+    }
+  ],
+  "api_info": {
+    "base_url": "https://edith.xiaohongshu.com/api/sns/web/v2/comment/sub/page",
+    "note_id": "68a35fc0000000001c009cd9",
+    "root_comment_id": "68a83b5900000000260052c3"
+  }
+}

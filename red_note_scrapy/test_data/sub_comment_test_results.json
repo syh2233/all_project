@@ -1,0 +1,20 @@
+[
+  {
+    "test_case": "标准子评论API",
+    "result": {
+      "success": false,
+      "error": "HTTP 406",
+      "status_code": 406,
+      "response_text": "{\"code\":-1,\"success\":false}"
+    }
+  },
+  {
+    "test_case": "替代子评论API",
+    "result": {
+      "success": false,
+      "error": "HTTP 404",
+      "status_code": 404,
+      "response_text": "404 page not found"
+    }
+  }
+]

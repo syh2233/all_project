@@ -1,0 +1,16 @@
+{
+  "patterns": {
+    "xs_signatures_found": 0,
+    "base64_strings_found": 43,
+    "timestamp_functions": 0,
+    "sample_xs": [],
+    "sample_base64": [
+      "postApiSnsWebV1LoginQrcodeCreate",
+      "/api/sns/web/v1/login/qrcode/create",
+      "getApiSnsWebV1LoginQrcodeStatus"
+    ]
+  },
+  "functions": {},
+  "implementation": "\ndef generate_xs_signature(url: str, data: dict = None) -> str:\n    \"\"\"\n    基于分析结果生成x-s签名\n    \n    Args:\n        url: 请求URL\n        data: 请求数据\n        \n    Returns:\n        x-s签名字符串\n    \"\"\"\n    import json\n    import time\n    import base64\n    import hashlib\n    \n    # 1. 构建输入字符串\n    if data:\n        data_str = json.dumps(data, separators=(',', ':'), ensure_ascii=False)\n    else:\n        data_str = \"\"\n    \n    input_str = f\"{url}{data_str}\"\n    \n    # 2. 生成签名（这里需要实现真正的算法）\n    # 基于分析，这是一个复杂的加密过程\n    # 暂时使用MD5作为示例\n    hash_obj = hashlib.md5(input_str.encode('utf-8'))\n    signature = base64.b64encode(hash_obj.digest()).decode('utf-8')\n    \n    # 3. 添加小红书前缀\n    return f\"XYS_{signature}\"\n",
+  "test_case": "\ndef test_xs_generation():\n    \"\"\"测试x-s生成功能\"\"\"\n    # 使用调试中获取的真实参数\n    test_url = \"/api/sec/v1/sbtsource\"\n    test_data = {\n        \"callFrom\": \"web\", \n        \"appId\": \"xhs-pc-web\"\n    }\n    \n    print(\"🧪 测试x-s生成\")\n    print(f\"URL: {test_url}\")\n    print(f\"Data: {test_data}\")\n    \n    # 生成签名\n    xs = generate_xs_signature(test_url, test_data)\n    print(f\"生成的X-s: {xs}\")\n    \n    # 生成时间戳\n    xt = str(int(time.time() * 1000))\n    print(f\"生成的X-t: {xt}\")\n    \n    return {\"X-s\": xs, \"X-t\": xt}\n"
+}

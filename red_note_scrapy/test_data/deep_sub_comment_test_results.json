@@ -1,0 +1,50 @@
+{
+  "test_summary": {
+    "total_methods": 6,
+    "success_count": 0,
+    "success_rate": "0.0%"
+  },
+  "method_results": [
+    {
+      "method": "GET请求 + 基础X-s",
+      "success": false,
+      "http_error": 406,
+      "response_text": "{\"code\":-1,\"success\":false}"
+    },
+    {
+      "method": "GET请求 + X-s + X-s-common",
+      "success": false,
+      "http_error": 406,
+      "response_text": "{\"code\":-1,\"success\":false}"
+    },
+    {
+      "method": "POST请求 + X-s + X-s-common",
+      "success": false,
+      "http_error": 404,
+      "response_text": "404 page not found"
+    },
+    {
+      "method": "GET请求 + 完整浏览器头",
+      "success": false,
+      "http_error": 406,
+      "response_text": "{\"code\":-1,\"success\":false}"
+    },
+    {
+      "method": "GET请求 + xsec_token",
+      "success": false,
+      "http_error": 406,
+      "response_text": "{\"code\":-1,\"success\":false}"
+    },
+    {
+      "method": "GET请求 + trace-id",
+      "success": false,
+      "http_error": 406,
+      "response_text": "{\"code\":-1,\"success\":false}"
+    }
+  ],
+  "conclusion": {
+    "sub_comment_accessible": false,
+    "needs_browser_environment": true,
+    "recommended_approach": "browser_automation"
+  }
+}

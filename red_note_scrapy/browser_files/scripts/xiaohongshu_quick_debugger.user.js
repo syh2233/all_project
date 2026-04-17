@@ -1,0 +1,81 @@
+// ==UserScript==
+// @name         小红书X-s-common快速调试器
+// @namespace    http://tampermonkey.net/
+// @version      0.1
+// @description  快速调试小红书X-s-common参数
+// @author       你
+// @match        https://www.xiaohongshu.com/*
+// @grant        none
+// @run-at       document-start
+// ==/UserScript==
+
+(function() {
+    'use strict';
+
+    console.log('🚀 小红书X-s-common快速调试器已启动');
+
+    // 拦截 setRequestHeader - 这是最关键的地方
+    const originalSetRequestHeader = XMLHttpRequest.prototype.setRequestHeader;
+    XMLHttpRequest.prototype.setRequestHeader = function(header, value) {
+        
+        // 当设置X-s-common时触发断点
+        if (header.toLowerCase() === 'x-s-common') {
+            console.log('🎯🎯🎯 发现X-s-common! 🎯🎯🎯');
+            console.log('X-s-common值:', value);
+            console.log('完整调用栈:');
+            console.log(new Error().stack);
+            
+            // 获取请求信息
+            if (this._url) {
+                console.log('请求URL:', this._url);
+                console.log('请求方法:', this._method || 'GET');
+            }
+            
+            // 🔥 在这里触发断点
+            debugger;
+            
+            // 显示更多调试信息
+            console.log('📋 X-s-common分析:');
+            console.log('- 长度:', value.length);
+            console.log('- 格式:', value.startsWith('XYS_') ? 'XYS格式' : '其他格式');
+            console.log('- 包含关键词:', value.includes('common') ? '包含common' : '不包含common');
+        }
+        
+        // 也监控其他认证参数
+        if (header.toLowerCase() === 'x-s') {
+            console.log('📝 X-s:', value);
+        }
+        
+        if (header.toLowerCase() === 'x-t') {
+            console.log('⏰ X-t:', value);
+        }
+        
+        return originalSetRequestHeader.apply(this, arguments);
+    };
+
+    // 拦截fetch的headers
+    const originalFetch = window.fetch;
+    window.fetch = function(url, options) {
+        if (typeof url === 'string' && url.includes('/api/sns/web/v2/comment/sub/page')) {
+            console.log('🔍 检测到子评论fetch请求:', url);
+            
+            if (options && options.headers) {
+                const headers = options.headers;
+                const xSCommon = headers['X-s-common'] || headers['x-s-common'];
+                
+                if (xSCommon) {
+                    console.log('🎯🎯🎯 fetch中发现X-s-common! 🎯🎯🎯');
+                    console.log('X-s-common值:', xSCommon);
+                    console.log('调用栈:', new Error().stack);
+                    debugger;
+                }
+            }
+        }
+        
+        return originalFetch.apply(this, arguments);
+    };
+
+    console.log('✅ 快速调试器就绪');
+    console.log('💡 现在去展开子评论，应该能在设置X-s-common时触发断点');
+
+})();
